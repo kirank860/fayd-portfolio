@@ -22,7 +22,7 @@ export default function Hero(){
           </h1>
           
           <p className='text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed'>
-            Aspiring <span className='font-semibold text-gray-900'>Data Analyst</span> skilled in{' '}
+            Aspiring <span className='font-semibold text-gray-100'>Data Analyst</span> skilled in{' '}
             <span className='font-semibold text-blue-600'>Power BI</span>,{' '}
             <span className='font-semibold text-purple-600'>SQL</span>,{' '}
             <span className='font-semibold text-pink-600'>Python</span>, and data storytelling
