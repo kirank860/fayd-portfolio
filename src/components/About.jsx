@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About(){
   return (
-    <section id='about' className='py-20 bg-gradient-to-br from-blue-50 to-purple-50'>
+    <section id='about' className='py-20 '>
       <div className='container mx-auto px-6'>
         <div className='max-w-3xl mx-auto text-center'>
           <h2 className='text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent'>

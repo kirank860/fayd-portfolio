@@ -5,7 +5,8 @@ export const SITE = {
   phone: '+971 54 448 0957',
   github: 'https://github.com/Fayd7',
   linkedin: 'https://www.linkedin.com/in/mohammedfayd',
-  resumePath: '/Mohammed_fayd_resume.pdf'
+  resumePath: '/MOHAMMED_FAYD_BUSINESS_ANALYST_.pdf'
+
 }
 
 export const SKILLS = [

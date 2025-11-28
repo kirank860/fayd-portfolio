@@ -4,7 +4,7 @@ import { PROJECTS } from '../../public/siteData'
 
 export default function Projects(){
   return (
-    <section id='projects' className='py-20 bg-gradient-to-br from-purple-50 to-pink-50'>
+    <section id='projects' className='py-20 bg-gradient-to-br'>
       <div className='container mx-auto px-6'>
         <h2 className='text-4xl font-bold mb-6 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent'>
           Featured Projects
