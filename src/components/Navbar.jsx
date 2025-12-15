@@ -2,14 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { Github, Linkedin, Mail, Download, Menu, X, ChevronDown, ExternalLink, Sparkles, Code2, Database, BarChart3, FileSpreadsheet } from 'lucide-react'
 
-// Site Data
-const SITE = {
-  name: 'Mohammed Fayd',
-  email: 'mohammed.fayd@example.com',
-  github: 'https://github.com/mohammedfayd',
-  linkedin: 'https://linkedin.com/in/mohammedfayd',
-  resumePath: '/resume.pdf'
-}
+import { SITE } from '../../public/siteData'
 
 const PROJECTS = [
   {
@@ -65,9 +58,8 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-zinc-900/80 backdrop-blur-xl border-b border-zinc-800' : 'bg-transparent'
-    }`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-zinc-900/80 backdrop-blur-xl border-b border-zinc-800' : 'bg-transparent'
+      }`}>
       <div className='container mx-auto flex items-center justify-between px-6 py-4'>
         <a href='#home' className='font-bold text-xl flex items-center gap-2 group'>
           <div className='w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 via-blue-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform'>
@@ -77,27 +69,29 @@ export default function Navbar() {
             {SITE.name}
           </span>
         </a>
-        
+
         <nav className='hidden md:flex items-center space-x-1'>
           {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
-            <a 
+            <a
               key={item}
-              href={`#${item.toLowerCase()}`} 
+              href={`#${item.toLowerCase()}`}
               className='px-4 py-2 text-zinc-300 hover:text-white transition-colors relative group'
             >
               {item}
               <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:w-full transition-all duration-300'></span>
             </a>
           ))}
-          <a 
-            href={SITE.resumePath} 
-            className='ml-4 px-6 py-2.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 text-white rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105'
+          <a
+            href={SITE.resumePath}
+            download="Mohammed_Fayd_Resume.pdf"
+            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-xl transition-all hover:scale-105"
           >
-            Resume
+            <Download size={20} />
+            Download CV
           </a>
         </nav>
 
-        <button 
+        <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className='md:hidden p-2 text-zinc-300 hover:text-white transition-all'
         >
@@ -106,27 +100,28 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div 
-        className={`md:hidden bg-zinc-900/95 backdrop-blur-xl border-b border-zinc-800 overflow-hidden transition-all duration-500 ${
-          isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}
+      <div
+        className={`md:hidden bg-zinc-900/95 backdrop-blur-xl border-b border-zinc-800 overflow-hidden transition-all duration-500 ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
       >
         <nav className='flex flex-col p-6 space-y-4'>
           {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
-            <a 
+            <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              onClick={() => setIsMobileMenuOpen(false)} 
+              onClick={() => setIsMobileMenuOpen(false)}
               className='text-zinc-300 hover:text-white transition-all hover:translate-x-2'
             >
               {item}
             </a>
           ))}
-          <a 
-            href={SITE.resumePath} 
-            className='px-6 py-3 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 text-white rounded-lg text-center hover:shadow-lg hover:shadow-purple-500/50 transition-all'
+          <a
+            href={SITE.resumePath}
+            download="Mohammed_Fayd_Resume.pdf"
+            className="flex items-center justify-center  gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-xl transition-all hover:scale-105"
           >
-            Resume
+            <Download size={20} />
+            Download CV
           </a>
         </nav>
       </div>

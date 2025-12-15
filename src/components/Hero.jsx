@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Github, Linkedin, Download, ChevronDown } from 'lucide-react'
 import { SITE } from '../../public/siteData'
 
-export default function Hero(){
+export default function Hero() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -16,45 +16,44 @@ export default function Hero(){
           <div className='inline-block mb-4 px-4 py-2 bg-blue-50 rounded-full text-blue-600 text-sm font-medium'>
             👋 Welcome to my portfolio
           </div>
-          
+
           <h1 className='text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent'>
             {SITE.name}
           </h1>
-          
+
           <p className='text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed'>
-            Aspiring <span className='font-semibold text-gray-100'>Data Analyst</span> skilled in{' '}
-            <span className='font-semibold text-blue-600'>Power BI</span>,{' '}
-            <span className='font-semibold text-purple-600'>SQL</span>,{' '}
-            <span className='font-semibold text-pink-600'>Python</span>, and data storytelling
+            <span className='font-semibold text-cyan-400'>Business & Data Analyst</span> transforming requirements into actionable insights. Skilled in{' '}
+            <span className='font-semibold text-blue-400'>Power BI</span>,{' '}
+            <span className='font-semibold text-purple-400'>SQL</span>,{' '}
+            <span className='font-semibold text-pink-400'>Python</span>, and Process Optimization.
           </p>
 
           <div className='flex flex-wrap gap-4 justify-center mb-12'>
-            <a 
-              href={SITE.github} 
-              target='_blank' 
-              rel='noreferrer' 
+            <a
+              href={SITE.github}
+              target='_blank'
+              rel='noreferrer'
               className='flex items-center gap-2 px-6 py-3 border-2 border-gray-900 rounded-lg hover:bg-gray-900 hover:text-white transition-all hover:scale-105'
             >
               <Github size={20} />
               GitHub
             </a>
-            <a 
-              href={SITE.linkedin} 
-              target='_blank' 
-              rel='noreferrer' 
+            <a
+              href={SITE.linkedin}
+              target='_blank'
+              rel='noreferrer'
               className='flex items-center gap-2 px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-all hover:scale-105'
             >
               <Linkedin size={20} />
               LinkedIn
             </a>
-            <a 
-  href="/MOHAMMED_FAYD_BUSINESS_ANALYST_.pdf"
-  download
-  className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-xl transition-all hover:scale-105"
->
-  <Download size={20} />
-  Download CV
-</a>
+            {/* <a
+              href={SITE.resumePath}
+              download="Mohammed_Fayd_Resume.pdf"
+              className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-xl transition-all hover:scale-105"
+            >
+           
+            </a> */}
 
 
           </div>

@@ -1,20 +1,40 @@
 export const SITE = {
   name: 'Mohammed Fayd',
-  title: 'Aspiring Data Analyst',
+  title: 'Business & Data Analyst',
   email: 'fxyid12@gmail.com',
   phone: '+971 54 448 0957',
   github: 'https://github.com/Fayd7',
   linkedin: 'https://www.linkedin.com/in/mohammedfayd',
-  resumePath: '/MOHAMMED_FAYD_BUSINESS_ANALYST_.pdf'
+  resumePath: '/fayd_data_business_analyst_cv.pdf'
 
 }
 
 export const SKILLS = [
-  'Python (Pandas, NumPy, Matplotlib, Seaborn)',
-  'SQL (PostgreSQL, MySQL, MS SQL)',
-  'Power BI, Tableau, Excel',
-  'Data Cleaning, Transformation, KPI Development',
-  'DAX, Power Query, Data Modeling'
+  // Business Analysis
+  'Requirements Gathering, BRD/FRD, Functional Specifications',
+  'User Stories, AS-IS/TO-BE Mapping, Gap Analysis',
+  'Process Improvement, Workflow Optimization',
+  'UAT Support, Root Cause Analysis',
+
+  // Data Analytics
+  'SQL (MySQL, PostgreSQL)',
+  'Python (Pandas, NumPy)',
+  'Power BI, DAX, Power Query',
+  'Data Modelling, Forecasting, Trend Analysis',
+  'KPI Reporting, ETL Concepts',
+
+  // Tools
+  'Excel (Advanced Formulas, Pivot Tables, Dashboards)',
+  'Power BI Service (RLS, Scheduled Refresh)',
+  'JIRA, Confluence',
+  'Salesforce CRM, Zoho CRM',
+  'Lucidchart, GitHub',
+
+  // Industry Keywords
+  'E-commerce Analytics, Retail Insights',
+
+  // Soft Skills
+  'Problem Solving, Cross-Functional Collaboration'
 ]
 
 export const PROJECTS = [
